@@ -6,8 +6,28 @@ package com.unittest.testing;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+private double celcius;
+	
+	public double getCelcius() {
+		return celcius;
+	}
+	
+	public void input(double celcius) {
+		this.celcius = celcius;
+	}
+	
+	public boolean isBound(double celcius) {
+		boolean isResult;
+		if (celcius >= -1000 && celcius <= 1000) {
+			isResult = true;
+		}
+		else {
+			isResult = false;
+			
+		}
+		
+		return isResult;
+	}
+
+
 }
